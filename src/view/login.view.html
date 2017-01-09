@@ -1,0 +1,37 @@
+<div>
+    
+    <div class="banner-login ">
+        <div class="pull-right ">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <h1 class="text-center">Admin Template</h1>
+            <section class="login_content">
+                <form name="form" ng-submit="vm.login()" role="form" >
+                    <h1>Angular Skeleton</h1>
+                    <div ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }" >
+                        <input type="text" class="form-control" placeholder="Username" required="" ng-model="vm.username" />
+                        <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+                    </div>
+                    <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }" >
+                        <input type="password" class="form-control" placeholder="Password" required=""  ng-model="vm.password" />
+                        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">password is required</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-lg btn-default btn-dark submit" type="submit" ng-disabled="form.$invalid || vm.dataLoading" >Se connecter</button>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div id="push"></div>
+    </div>
+
+</div>

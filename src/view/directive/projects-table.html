@@ -1,0 +1,26 @@
+<div class="table-responsive">
+    <table class="table table-striped jambo_table bulk_action">
+        <thead>
+            <tr class="headings">
+
+                <th class="column-title">Code </th>
+                <th class="column-title">Nom du projet </th>
+                <th class="column-title">Entité MOE </th>
+                <th class="column-title">CP MOE </th>
+                <th class="column-title no-link last"><span class="nobr">Action</span></th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="even pointer" ng-repeat="project in projects._embedded.items" >
+                <td class=" "><a href="#/projet/{{project.id}}"><u>{{project.code}}</u></a></td>
+                <td class=" ">{{project.name}} </td>
+                <td class=" ">{{project.mOEEntity}} </td>
+                <td class=" ">{{project.cPMOE}}</td>
+                <td class=" last"><a href="#/projet/{{project.id}}"><i class="fa fa-eye" aria-hidden="true"> </i> <b>Voir</b></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Admin template </title>
+
+        <!-- build:css build/css/lib.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../vendor/iCheck/skins/flat/green.css" />
+        <link rel="stylesheet" href="../vendor/select2/dist/css/select2.min.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css build/css/app.css -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="../src/assets/css/custom.min.css">
+        <!-- endinject -->
+        <!-- endbuild -->
+
+    </head>
+    <body class="{{bodyClass}}">
+
+        <div class="container body">
+            <div class="main_container">
+                <span ng-if="!isLogin">
+                    <sidebar></sidebar>
+                </span>
+                <!-- page content -->
+                <div class="right_col" role="main">
+                    <div ng-view></div>
+                </div>
+                <!-- /page content -->
+                <!-- footer content -->
+                <footer>
+                    <div class="pull-right">
+
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+        </div>
+        
+		<!-- build:js build/js/lib.js -->
+        <!-- bower:js -->
+        <script src="../vendor/jquery/dist/jquery.js"></script>
+        <script src="../vendor/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../vendor/iCheck/icheck.js"></script>
+        <script src="../vendor/select2/dist/js/select2.js"></script>
+        <script src="../vendor/angular/angular.js"></script>
+        <script src="../vendor/angular-cookies/angular-cookies.js"></script>
+        <script src="../vendor/angular-route/angular-route.js"></script>
+        <script src="../vendor/html5shiv/dist/html5shiv.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+		
+        <!-- build:js build/js/app.js -->
+		
+        <!-- inject:js -->
+        <script src="../src/app.js"></script>
+        <script src="../src/assets/js/custom.min.js"></script>
+        <script src="../src/controller/index.controller.js"></script>
+        <script src="../src/controller/login.controller.js"></script>
+        <script src="../src/directive/projects-table.directive.js"></script>
+        <script src="../src/directive/sidebar.directive.js"></script>
+        <script src="../src/directive/splash-screen.directive.js"></script>
+        <script src="../src/services/apicaller.service.js"></script>
+        <script src="../src/services/authentication.service.js"></script>
+        <script src="../src/services/projectdata.service.js"></script>
+        <!-- endinject -->
+		
+        <!-- inject:templates:js -->
+        <!-- endinject -->
+		
+        <!-- endbuild -->
+
+    </body>
+</html>

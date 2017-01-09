@@ -1,0 +1,78 @@
+{
+   "page":1,
+   "limit":10,
+   "pages":1,
+   "total":2,
+   "_links":{
+      "self":{
+         "href":"\/server\/web\/app_dev.php\/api\/projects\/?page=1&paginate=10"
+      },
+      "first":{
+         "href":"\/server\/web\/app_dev.php\/api\/projects\/?page=1&paginate=10"
+      },
+      "last":{
+         "href":"\/server\/web\/app_dev.php\/api\/projects\/?page=1&paginate=10"
+      }
+   },
+   "_embedded":{
+      "items":[
+         {
+            "id":1,
+            "name":"test",
+            "code":"TP1",
+            "mOEEntity":"test",
+            "cPMOE":"aeaea",
+            "_links":{
+               "self":{
+                  "href":"\/projects\/1"
+               }
+            },
+            "_embedded":{
+               "versions":[
+                  {
+                     "projectId":1,
+                     "id":1,
+                     "name":"1.0.0",
+                     "description":"Version 1",
+                     "state":"En cours",
+                     "_links":{
+                        "self":{
+                           "href":"\/projects\/1"
+                        }
+                     }
+                  },
+                  {
+                     "projectId":1,
+                     "id":2,
+                     "name":"2.0.0",
+                     "description":"Version 2",
+                     "state":"En cours",
+                     "_links":{
+                        "self":{
+                           "href":"\/projects\/2"
+                        }
+                     }
+                  }
+               ]
+            }
+         },
+         {
+            "id":2,
+            "name":"test 2",
+            "code":"TP2",
+            "mOEEntity":"test",
+            "cPMOE":"aeaea",
+            "_links":{
+               "self":{
+                  "href":"\/projects\/2"
+               }
+            },
+            "_embedded":{
+               "versions":[
+
+               ]
+            }
+         }
+      ]
+   }
+}
